@@ -1,4 +1,4 @@
-# php-rabbit-http-api
+# php-rabbit-http-wrapper
 
 Örnek Kullanımı ( Sample ) : 
 
