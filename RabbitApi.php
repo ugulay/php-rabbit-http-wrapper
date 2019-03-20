@@ -19,12 +19,11 @@ class RabbitApi {
     protected $virtualHost = '/';
     protected $path = '';
 
-    function __construct() {
-
+    function __construct($configParameters) {
         $this->config = [
-            'host' => config('rabbitHost') . ':15672/api/',
-            'user' => config('rabbitUser'),
-            'pass' => config('rabbitPass'),
+            'host' => $configParameters['rabbitHost'] . ':'. $configParameters['rabbitPort'] .'/api/',
+            'user' => $configParameters['rabbitUser'],
+            'pass' => $configParameters['rabbitPass']
         ];
     }
 
