@@ -7,8 +7,8 @@
           $config = [
               'rabbitHost' => '127.0.0.1',
               'rabbitPort' => '15672',
-              'rabbitUser' => '',
-              'rabbitPass' => ''
+              'rabbitUser' => 'JohnDoe',
+              'rabbitPass' => 'foobar'
           ];
 
           $rabbit = new \Library\RabbitApi($config);
