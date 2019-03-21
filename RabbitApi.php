@@ -220,6 +220,30 @@ class RabbitApi {
     }
 
     /**
+     * İsmi verilen kuyruğa ait istatistikleri getirir
+     * @param type $queueName
+     * @return $this
+     */
+    function getQueue($queueName = false) {
+
+        $get = $this->httpRequest('queues');
+        $get = json_decode($get, true);
+
+        $ready = [];
+
+        foreach ($get as $val) {
+            if ((string) $val['name'] === (string) $queueName) {
+                $ready = $val;
+                break;
+            }
+        }
+
+        $this->result = json_encode($ready);
+
+        return $this;
+    }    
+    
+    /**
      * Kuyruk listesinden istediğiniz anahtara sahip verileri getirir
      * @param type $key
      * @return $this
