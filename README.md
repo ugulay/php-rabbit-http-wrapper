@@ -27,6 +27,10 @@
           
           //Kuyruk Listesini getirir
           //Returns Queue List
-          $qlist = $rabbit->getQueues->result();
+          $qlist = $rabbit->getQueues()->result();
+          
+          //Tek bir kuyruğa ait verileri getirir
+          //Return Queue Stats
+          $qdata = $rabbit->getQueue('queueFooBar')->result();
           
         ?>
