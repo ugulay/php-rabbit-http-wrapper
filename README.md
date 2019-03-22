@@ -1,5 +1,8 @@
 # php-rabbit-http-wrapper
 
+Master branch build status: 
+![](https://travis-ci.org/ugulay/php-rabbit-http-wrapper.svg?branch=master)
+
 Örnek Kullanımı ( Sample ) : 
 
         <?php
