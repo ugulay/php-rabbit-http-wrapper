@@ -4,19 +4,17 @@ language: php
 # Versions of PHP you want your project run with.
 php:
  - 5.6
- - 7.0
- - 7.1
  - 7.2
  - 7.3
  
- #RabbitMQ uses the default configuration:
-#vhost: /
-#username: guest
-#password: guest
-#You can set up more vhosts and roles in the before_script section of your .travis.yml.
 services:
  - rabbitmq
- 
+ #RabbitMQ uses the default configuration:
+ #vhost: /
+ #username: guest
+ #password: guest
+ #You can set up more vhosts and roles in the before_script section of your .travis.yml.
+
 install:
  - composer install --no-interaction
   # enabled rabbitmq_management plugin to check queue
