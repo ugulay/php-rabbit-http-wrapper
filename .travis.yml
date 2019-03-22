@@ -9,6 +9,9 @@ php:
  - 7.2
  - 7.3
  
+install:
+ - composer install
+ 
 #RabbitMQ uses the default configuration:
 #vhost: /
 #username: guest
