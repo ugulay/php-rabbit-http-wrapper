@@ -1,5 +1,7 @@
 <?php
 
+require 'RabbitApi.php';
+
 use PHPUnit\Framework\TestCase;
 
 class RabbitApiTest extends TestCase
@@ -13,8 +15,8 @@ class RabbitApiTest extends TestCase
       $config = [
         'rabbitHost' => '127.0.0.1',
         'rabbitPort' => '15672',
-        'rabbitUser' => 'JohnDoe',
-        'rabbitPass' => 'foobar'
+        'rabbitUser' => 'test',
+        'rabbitPass' => 'test'
       ];
 
       $this->rabbit = new \Library\RabbitApi($config);
