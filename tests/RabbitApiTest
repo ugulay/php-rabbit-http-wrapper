@@ -1,0 +1,26 @@
+<?php
+
+use PHPUnit\Framework\TestCase;
+
+class RabbitApiTest extends TestCase
+{
+    
+    private $rabbit;
+    
+    public function setUp()
+    {
+        
+      $config = [
+        'rabbitHost' => '127.0.0.1',
+        'rabbitPort' => '15672',
+        'rabbitUser' => 'JohnDoe',
+        'rabbitPass' => 'foobar'
+      ];
+
+      $this->rabbit = new \Library\RabbitApi($config);
+      
+    }
+    
+}
+
+?>
