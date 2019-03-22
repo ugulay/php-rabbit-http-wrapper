@@ -16,7 +16,6 @@ services:
  #You can set up more vhosts and roles in the before_script section of your .travis.yml.
 
 install:
- - composer install --no-interaction
   # enabled rabbitmq_management plugin to check queue
  - sudo rabbitmq-plugins enable rabbitmq_management
  - sudo wget http://guest:guest@localhost:15672/cli/rabbitmqadmin -O /usr/local/bin/rabbitmqadmin
