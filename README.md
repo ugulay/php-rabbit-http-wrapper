@@ -1,7 +1,6 @@
-# php-rabbit-http-wrapper
+# RabbitMQ HTTP Wrapper based PHP cURL
 
-Master branch build status: 
-![](https://travis-ci.org/ugulay/php-rabbit-http-wrapper.svg?branch=master)
+[![Build Status](https://travis-ci.org/ugulay/php-rabbit-http-wrapper.svg?branch=master)](https://travis-ci.org/ugulay/php-rabbit-http-wrapper)
 
 Örnek Kullanımı ( Sample ) : 
 
