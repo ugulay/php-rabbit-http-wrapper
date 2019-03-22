@@ -1,6 +1,8 @@
 <?php
 
-class RabbitApiTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class RabbitApiTest extends TestCase
 {
     
     private $rabbit;
